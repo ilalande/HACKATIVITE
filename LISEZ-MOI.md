@@ -1,28 +1,28 @@
-## Concept
+# HACKATIVITY - Le site d'activités créatives
 
-Ce template est conçu pour servir de base à tous les projets (P2/P3) suivants la stack React-Node-MySQL telle qu'enseignée à la Wild Code School. Il est préconfiguré avec un ensemble d'outils qui aideront les élèves à produire un code correspondant mieux aux standards du monde du travail et plus facile à maintenir, tout en restant simple à utiliser.
+## Table of Contents
 
-## Installation & Utilisation
+1. [Informations générales](#Informations-générales)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Autrice](#autrice)
 
-### Pour commencer un projet
+## Informations générales
 
-- Sur VSCode, installer les plugins **Prettier - Code formatter** et **ESLint** et les configurer
-- Cloner ce dépôt, se rendre à l'intérieur
-- Lancer la commande `npm run setup`
-- _NB: Pour exécuter le backend, un fichier d'environnement avec les données de connexion d'une BdD valide est nécesaire. Un modèle se trouve dans `backend/.env.sample`_
+Cette WebApp est un projet personnel
+Il a été développé par [Juliane Casier](https://www.linkedin.com/in/juliane-casier-bb642832/)
 
-### Liste des commandes et signification
+### Statut du projet et état d'avancement
 
-- `setup` : Initialisation du frontend et du backend ainsi que des outils
-- `dev` : Démarrage des deux serveurs (frontend + backend) dans un même terminal
-- `dev-front` : Démarrage d'un serveur React pour le frontend
-- `dev-back` : Démarrage d'un serveur Express pour le backend
-- `lint` : Exécute des outils de validation de code (sera exécutée automatiquement à chaque _commit_)
-- `fix` : Fixe les erreurs de formatage (à lancer si `lint` ne passe pas)
+## Technologies
 
-## Pour plus d'informations
+Ce projet est écrit en React
 
-### Listing des outils utilisés
+### Template
+
+- `Template` : Application développée sur React, Node Express à partir d'un [template](https://github.com/WildCodeSchool/js-template-fullstack) développé par la Wild Code School. Seul la partie front a été utilisée
+
+**Outils utilisés dans ce template:**
 
 - _Concurrently_ : Permet d'exécuter plusieurs commandes dans un même terminal
 - _Husky_ : Permet d'exécuter des actions en déclenchement de commandes _git_
@@ -32,18 +32,31 @@ Ce template est conçu pour servir de base à tous les projets (P2/P3) suivants 
 - _Standard Airbnb_ : L'un des "standards" les plus connus, même s'il n'est pas officiellement lié à ES/JS
 - _Nodemon_ : Outil permettant de relancer un serveur à chaque fois qu'un des fichiers est modifié
 
-### Reste à faire
+### Autres librairies
 
-Prettier:
+- `Redux` : Redux a été utilisé pour gérer les informations liées aux utilisateurs au moment de la connexion ou de l'inscription puis tout au long de la navigation
+- `React DND` : Pour gérer le Drag and Drop des posts-its, React DND a été utilisé
+- `Autres librairies diverses` :
+  - Styled Component a été utilisé pour gérer le style de l'application.
+  - React Router pour gérer les liens entre les page.
+  - Prop-types pour typer les props.
 
-- corriger la config front/back pour qu'elle suive le même standard qu'ESLint
+## Installation
 
-Testing:
+### Pour commencer un projet
 
-- ajouter des tests unitaires sur le front et le back, avec les commandes associées
+    Sur VSCode, installer les plugins Prettier - Code formatter et ESLint et les configurer
+    Cloner ce dépôt, se rendre à l'intérieur
+    Lancer la commande npm run setup
 
-Vérifications:
+### Liste des commandes et signification
 
-- s'assurer que les principaux outils utilisés lors de la formation sont compatibles avec ce template
-- deploiements ? Compatible avec Netlify/Vercel/Heroku ?
-- fonctionnement avec yarn/pnpm
+    setup : Initialisation du frontend et du backend ainsi que des outils
+    dev : Démarrage des trois serveurs (frontend + backend + admin) dans un même terminal
+    dev-front : Démarrage d'un serveur React pour le frontend
+    lint : Exécute des outils de validation de code (sera exécutée automatiquement à chaque commit)
+    fix : Fixe les erreurs de formatage (à lancer si lint ne passe pas)
+
+## Autrice
+
+Ce projet a été développé dans le cadre de la fin de formation développeur web Javascript de la Wild Code School de juin 2022 par [Juliane Casier](https://www.linkedin.com/in/juliane-casier-bb642832/)
